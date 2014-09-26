@@ -14,7 +14,13 @@ class Solution:
             for i in A[1:]:
                 single ^= i   #xor operation
         else: 
-             print "The list is empty."
-             single = float("inf")
+            print "The list is empty."
+            single = float("inf")
         
-    return single
+        return single
+
+list = [1,1,2,2,3]
+sol = Solution()
+single_number = sol.singleNumber(list)
+
+print single_number
